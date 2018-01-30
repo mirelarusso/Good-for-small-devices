@@ -8,7 +8,7 @@
     body {
     font-family : Helvetica, Arial, comic;
     color : #333;
-    background : url(i/denim2.png) 50% 350px no-repeat #e8ecf0;
+    background : url("http://hit-interiors.com/wp-content/uploads/White-Living-Room-Walls-1.jpg") 50% 350px no-repeat #e8ecf0;
     }
     h1 {
     font : bold 4.2rem Helvetica, Arial, sans-serif;
@@ -220,7 +220,7 @@
     display : block;
     }
     [role="banner"] h1:after {
-    content : "Made Locally";
+    content : "Put Love in All";
     visibility : visible;
     display : block;
     color : #aaa;
@@ -238,7 +238,7 @@
     color : rgba(41, 78, 134, 0.5);
     }
     [role="banner"] h2:after {
-    content : "Impeccable Quality";
+    content : "Impeccable Life Quality";
     visibility : visible;
     display : block;
     }
@@ -249,8 +249,8 @@
     line-height : 1.6;
     }
     .preamble {
-    background : url(i/sep.png) 50% 0 no-repeat transparent;
-    }
+        background : url(i/sep.png) 50% 0 no-repeat transparent;
+        }
     .preamble h3:after {
     visibility : visible;
     content : "A Fashion-Forward Future";

@@ -164,8 +164,8 @@
     list-style : disc;
     }
     .uppercase {
-    text-transform : uppercase;
-    }
+        text-transform : uppercase;
+        }
     .rwd-break {
     display : block;
     }
@@ -182,7 +182,6 @@
     .main h3, .preamble h3, .select {
     visibility : hidden;
     font-size : 2rem;
-    text-transform : uppercase;
     letter-spacing : 0.1em;
     color : #263358;
     }
@@ -207,7 +206,6 @@
     }
     [role="banner"] h1 {
     padding : 1em 0 0;
-    text-transform : uppercase;
     letter-spacing : 0.1em;
     font-size : 3.5rem;
     font-weight : 900;
@@ -243,7 +241,6 @@
     display : block;
     }
     .summary p {
-    text-transform : uppercase;
     letter-spacing : 0.1em;
     font-size : 1.8rem;
     line-height : 1.6;
@@ -262,7 +259,7 @@
     content : "Get Into a Brand New Pair";
     }
     .benefits h3:after {
-    content : "Look Great\2026 and Feel Great Too!";
+    content : "Look Great and Feel Great Too!";
     }
     .requirements h3:after {
     content : "âOne Size Fitsâ All Be Damned!";

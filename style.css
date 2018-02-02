@@ -261,10 +261,7 @@
     .benefits h3:after {
     content : "Look Great and Feel Great Too!";
     }
-    .requirements h3:after {
-    content : "âOne Size Fitsâ All Be Damned!";
-    text-indent : -0.5em;
-    }
+   
     .design-selection {
     margin : 3em 0 0;
     }

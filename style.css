@@ -7,7 +7,7 @@
     }
     body {
     font-family : Helvetica, Arial, comic;
-    color : rgb(175, 33, 33);
+    color : rgb(51, 59, 97);
     background : url("http://hit-interiors.com/wp-content/uploads/White-Living-Room-Walls-1.jpg") 50% 350px no-repeat #e8ecf0;
     }
     h1 {
@@ -221,25 +221,27 @@
     content : "Put Love in All";
     visibility : visible;
     display : block;
-    color : #aaa;
+    color : rgb(29, 22, 22);
     letter-spacing : 0.5em;
-    font-size : 1.4rem;
+    font-size : 1.2rem;
     font-weight : normal;
-    margin : 0.5em 0 3em;
-    color : rgba(24, 46, 79, 0.4);
+    margin : 0.01em 0 3em;
+    color : rgba(255, 0, 0, 0.4);
     }
     [role="banner"] h2 {
     visibility : hidden;
     display : none;
     text-transform : uppercase;
     font-weight : 400;
-    color : rgba(41, 78, 134, 0.5);
+    color : rgba(243, 7, 7, 0.5);
     }
     [role="banner"] h2:after {
     content : "Impeccable Life Quality";
     visibility : visible;
-    display : block;
+    display : inherit;
     }
+
+
     .summary p {
     letter-spacing : 0.1em;
     font-size : 1.8rem;
@@ -250,14 +252,11 @@
         }
     .preamble h3:after {
     visibility : visible;
-    content : "A Fashion-Forward Future";
     }
     .explanation h3:after {
     content : "See Yourself in a Different Way";
     }
-    .participation h3:after {
-    content : "Get Into a Brand New Pair";
-    }
+    
     .benefits h3:after {
     content : "Look Great and Feel Great Too!";
     }
@@ -414,33 +413,18 @@
     width : 60px;
     height : 60px;
     }
-    .view-css a {
-    background-position : -502px 12px;
-    }
+    
     .view-css a:hover, .view-css a:focus {
     background-position : -502px -78px;
     }
-    .css-resources a {
-    background-position : -150px -194px;
-    }
-    .css-resources a:hover, .css-resources a:focus {
-    background-position : -150px -286px;
-    }
+    
     .zen-faq a {
     background-position : -265px -192px;
     }
     .zen-faq a:hover, .zen-faq a:focus {
     background-position : -265px -284px;
     }
-    .zen-submit a {
-    background-position : -502px -194px;
-    }
-    .zen-submit a:hover, .zen-submit a:focus {
-    background-position : -502px -286px;
-    }
-    .zen-translations a {
-    background-position : -380px -193px;
-    }
+    
     .zen-translations a:hover, .zen-translations a:focus {
     background-position : -380px -285px;
     }
@@ -450,51 +434,7 @@
     background-position : 90% 80%;
     }
    
-    
 
-    .like-content {
-        display: inline-block;
-        width: 100%;
-        margin: 40px 0 0;
-        padding: 40px 0 0;
-        font-size: 18px;
-        border-top: 10px #eee;
-        text-align: center;
-    }
-    .like-content span {
-        color: #9d9da4;
-        font-family: monospace;
-    }
-    .like-content .btn-secondary {
-          display: block;
-          margin: 40px auto 0px;
-        text-align: center;
-        background: #2582ed;
-        border-radius: 3px;
-        box-shadow: 0 10px 20px -8px rgb(75, 188, 240);
-        padding: 10px 17px;
-        font-size: 18px;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        color: #ffffff;
-        text-decoration: none;
-        -webkit-transition: 0.3s ease;
-        transition: 0.3s ease;
-    }
-    
-    .animate-like {
-        animation-name: likeAnimation;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-        animation-duration: 0.65s;
-    }
-    @keyframes likeAnimation {
-      0%   { transform: scale(30); }
-      100% { transform: scale(1); }
-    }
-    
-    
     .intro:before {
     content : "";
     display : block;
@@ -632,7 +572,7 @@
     width : 23%;
     clear : none;
     padding-right : 2%;
-    }
+    }   ``
     .next {
     margin-right : 2em;
     margin-left : -0.4em;

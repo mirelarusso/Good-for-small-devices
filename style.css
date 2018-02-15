@@ -1,639 +1,90 @@
-* {
-    margin : 0;
-    padding : 0;
-    }
-    html {
-    font-size : 62.5%;
-    }
-    body {
-    font-family : Helvetica, Arial, comic;
-    color : rgb(51, 59, 97);
-    background : url("http://hit-interiors.com/wp-content/uploads/White-Living-Room-Walls-1.jpg") 50% 350px no-repeat #e8ecf0;
-    }
-    h1 {
-    font : normal 4.2rem Helvetica, Arial;
-    margin : 0 0 0.4em;
-    }
-    h2 {
-    font : normal 1.8rem Helvetica, Arial, sans-serif;
-    margin : 0 0 1em;
-    }
-    h3 {
-    font : normal 1.5rem Helvetica, Arial, sans-serif;
-    margin : 0 0 1em;
-    }
-    h4, h5, h6 {
-    font : normal 1.2rem Helvetica, Arial, sans-serif;
-    margin : 0 0 1em;
-    }
-    .wf-active body, .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6 {
-    font-family : "effra";
-    }
-    p, ul, dl, ol, table {
-    font-size : 16px;
-    margin : 0 0 1.5em;
-    }
-    .wf-active p {
-    font-weight : 300;
-    }
-    form {
-    margin : 0 0 1.5em;
-    }
-    label {
-    font-size : 1.6rem;
-    }
-    input.empty::-webkit-input-placeholder, textarea.empty::-webkit-input-placeholder {
-    color : red;
-    }
-    input.empty:-moz-placeholder, textarea.empty:-moz-placeholder {
-    color : red;
-    }
-    .error {
-    color : red;
-    }
-    td {
-    padding : 0.25em 1em;
-    border-top : 1px solid #aaa;
-    }
-    em {
-    font-style : italic;
-    }
-    strong {
-    font-weight : bold;
-    }
-    mark {
-    background : none;
-    font-style : normal;
-    }
-    video {
-    width : 100%;
-    height : auto;
-    }
-    a {
-    text-decoration : none;
-    color : #a28351;
-    position : relative;
-    transition : all 0.25s linear;
-    }
-    a:after {
-    content : "";
-    display : block;
-    background : #a28351;
-    height : 2px;
-    width : 100%;
-    position : absolute;
-    bottom : -0.2em;
-    left : 0;
-    opacity : 0;
-    transition : all 0.25s linear;
-    }
-    a:hover, a:focus {
-    color : #000;
-    }
-    a:hover:after, a:focus:after {
-    opacity : 1;
-    bottom : 0;
-    }
-    img {
-    display : block;
-    margin : 0 10px 10px 0;
-    max-width : 100%;
-    }
-    a img {
-    border : none;
-    }
-    i {
-    font-style : normal;
-    }
-    b {
-    font-weight : normal;
-    }
-    abbr, abbr[title], acronym {
-    font-size : 75%;
-    letter-spacing : 0.2em;
-    text-transform : uppercase;
-    border : none;
-    }
-    code {
-    font : 1.4rem/1 Consolas, 'Courier New', Courier, monospace;
-    color : #999;
-    }
-    sub, sup {
-    line-height : 0;
-    }
-    ::selection {
-    background : #d5d9dc;
-    color : #333;
-    }
-    ::-moz-selection {
-    background : #d5d9dc;
-    color : #333;
-    }
-    .phark {
-    display : block;
-    text-indent : -9999px;
-    background-position : 0 0;
-    background-repeat : no-repeat;
-    background-color : transparent;
-    }
-    .phark-link {
-    overflow : hidden;
-    }
-    .clearfix:after {
-    content : ".";
-    display : block;
-    height : 0;
-    clear : both;
-    visibility : hidden;
-    }
-    .offscreen {
-    position : absolute;
-    left : -9999px;
-    display : block;
-    }
-    .onscreen {
-    left : 0;
-    }
-    .hide {
-    display : none;
-    }
-    .no-bullets {
-    list-style : none;
-    }
-    .bulleted {
-    list-style : disc;
-    }
-    .uppercase {
-        text-transform : uppercase;
-        }
-    .rwd-break {
-    display : block;
-    }
-    .kellum {
-    display : block;
-    text-indent : 100%;
-    white-space : nowrap;
-    overflow : hidden;
-    }
-    .page-wrapper {
-    width : 90%;
-    margin : 0 auto;
-    }
-    .main h3, .preamble h3, .select {
-    visibility : hidden;
-    font-size : 2rem;
-    letter-spacing : 0.1em;
-    color : #263358;
-    }
-    .wf-active .main h3, .wf-active .preamble h3 {
-    font-weight : 900;
-    }
-    .main h3:after, .preamble h3:after, .select:after {
-    visibility : visible;
-    display : block;
-    }
-    .main p, .preamble p {
-    font-size : 2rem;
-    }
-    .wf-active .main p, .wf-active .preamble p {
-    line-height : 1.4;
-    }
-    .next a, .previous a, .viewall a, .zen-resources a, .summary p:nth-child(2) a {
-    transition-property : none;
-    }
-    .next a:after, .previous a:after, .viewall a:after, .zen-resources a:after, .summary p:nth-child(2) a:after {
-    opacity : 0;
-    }
-    [role="banner"] h1 {
-    padding : 1em 0 0;
-    letter-spacing : 0.1em;
-    font-size : 3.5rem;
-    font-weight : 900;
-    color : #182e4f;
-    visibility : hidden;
-    }
-    [role="banner"] h1:before {
-    content : "CSS Zen Garments";
-    visibility : visible;
-    display : block;
-    }
-    [role="banner"] h1:after {
-    content : "Put Love in All";
-    visibility : visible;
-    display : block;
-    color : rgb(29, 22, 22);
-    letter-spacing : 0.5em;
-    font-size : 1.2rem;
-    font-weight : normal;
-    margin : 0.01em 0 3em;
-    color : rgba(255, 0, 0, 0.4);
-    }
-    [role="banner"] h2 {
-    visibility : hidden;
-    display : none;
-    text-transform : uppercase;
-    font-weight : 400;
-    color : rgba(243, 7, 7, 0.5);
-    }
-    [role="banner"] h2:after {
-    content : "Impeccable Life Quality";
-    visibility : visible;
-    display : inherit;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Raw and Simple by Mireille</title>
+
+	<link rel="stylesheet" media="screen" href="style.css">
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Mirela Russo">
+	<meta name="description" content="A demonstration of what can be accomplished through raw alimentation and simple lifestyle.">
+	<meta name="robots" content="all">
+
+</head>
+
+<body id="css-zen-garden">
+	
+
+<div class="page-wrapper">
+	<section class="intro" id="zen-intro">
+		<header role="banner">
+			<h1>Raw and Simple by Mireille</h1>
+			<h2>The Beauty of a Simple Life</h2>
+		</header>
+
+		<div class="summary" id="zen-summary" role="article">
+			<p>A demonstration of how we can achieve a general physical and spiritual well being state</p>
+			</div>
+
+		<div class="preamble" id="zen-preamble" role="article">
+			<h3>The Road to Well Being</h3>
+			<p>Hello my dearest friends! First of all I would like to explain: why this page? Well, people are asking me in private, details of how to eat, how I eat, why pains, how to handle with them, how I feel, how will they feel if they start a raw and simple life. In this page I will try to explain step by step all these topics, so you will have free access to my informations. I am sure in few years will not be necessary anymore pages like this one, people are more and more interested of a normal and simple life, free of diseases and pains. They will be “forced” to return to nature’s call otherwise- look around you, there is so much suffer and this is just because of stupid thoughts like: “never mind, I don’t suffer”, “my grandma lived 100 years old and she ate of all”, “I don’t eat so much of processed foods”, “I don’t eat meat”, “where do I take my proteins, Calcium, Iron, Vit B12, D, and so on…" No, I don’t need anymore any of this, I am vegetarian from 2008 and raw vegan from 2015. I can speak from my experience, and “I am responsible of what I say, not of what YOU UNDERSTAND”. I just want to share my case, before I became vegetarian, my iron and B12 levels were all the time under the lower limit. Now all my blood tests are perfect.</p>
+        </div>
+	</section>
+
+	<div class="main supporting" id="zen-supporting" role="main">
+		<div class="explanation" id="zen-explanation" role="article">
+			<h3>So What is About?</h3>
+			<p>Always looking for the magic pill or drug keeps us away from true health. We are sick because we stopped listening to the signals of our bodies, which are the diseases, and fell for the marketed easy-fix-drug.
+                
+                Our so-called health care system is based on chemicals and surgery, on poisons, removing organs and tissues that are no longer working, replaced by metals and artificial materials. Always looking at the symptoms, finding remedy by suppressing them and not allowing true healing.
+                
+                We are sick because we gave away our authority, because we forgot that we are sovereign beings, because we lost our quest for true health, and we accepted the labels of disease, we are sick from not daring to step out of the norm, and because we lost our faith in our Creator and in nature." 
+
+                Don't forget that the most important is how you feel about you, how are your passed thoughts; fears, doubts and negativity must disappear from your mind, let it free and smile. Serenity be with you all!
+                Many thanks to all my teachers, they know who they are, without them I couldn’t be so strong informed today. All the best from all my heart for all of you!
+                </p>
+		</div>
+
+		<div class="benefits" id="zen-benefits" role="article">
+			<h3>Benefits</h3>
+            <p>Keep your body clean for clearance and illuminated conscience and soul. This is what is matter, and not the one moment desire and craving for processed unhealthy foods and bad habits.</p>
+            <p>Many thanks to all my teachers, they know themselves who they are, without them I couldn’t be so strong and informed today. All the best from all my heart for all of you! Mireille.</p>
+		</div>
+
+		<footer>
+			<a href="https://mirelarusso.github.io/Contact-e-mail/" title="E-mail contact">Contact</a>
+			<a href="https://www.youtube.com/watch?v=dRGlon_ezvU" title="Raw food real food">Eat Cucumber!</a>
+			<a href="https://github.com/mirelarusso" title="My GH account">GH</a>
+		</footer>
+
+	</div>
 
 
-    .summary p {
-    letter-spacing : 0.1em;
-    font-size : 1.8rem;
-    line-height : 1.6;
-    }
-    .preamble {
-        background : url(i/sep.png) 50% 0 no-repeat transparent;
-        }
-    .preamble h3:after {
-    visibility : visible;
-    }
-    .explanation h3:after {
-    content : "See Yourself in a Different Way";
-    }
-    
-    .benefits h3:after {
-    content : "Look Great and Feel Great Too!";
-    }
-   
-    .design-selection {
-    margin : 3em 0 0;
-    }
-    .design-selection ul {
-    list-style : none;
-    width : 94%;
-    margin : 0 auto;
-    }
-    .design-selection ul:after {
-    content : ".";
-    display : block;
-    height : 0;
-    clear : both;
-    visibility : hidden;
-    }
-    .design-selection li {
-    float : left;
-    width : 50%;
-    font-size : 1.2rem;
-    margin : 0 0 1em;
-    color : #aaa;
-    }
-    .design-selection li:nth-child(odd) {
-    width : 47%;
-    padding-right : 3%;
-    clear : left;
-    }
-    .design-name {
-    display : block;
-    font-size : 1.4rem;
-    font-weight : bold;
-    margin : 0 0 0.24em;
-    text-transform : uppercase;
-    letter-spacing : 0.1em;
-    position : relative;
-    }
-    .design-name:after {
-    background : none;
-    opacity : 0;
-    }
-    .design-name:hover {
-    font-style : italic;
-    }
-    .designer-name {
-    color : #7989a3;
-    }
-    .designer-name:after, footer a:after {
-    height : 1px;
-    }
-    .select:after {
-    content : "Washes & Styles";
-    font-size : 1.8rem;
-    text-align : center;
-    width : 7em;
-    margin : 0 auto 2em;
-    background : url(i/waves.png) 50% 0 no-repeat transparent;
-    padding : 2em 0 0;
-    color : #182e4f;
-    visibility : visible;
-    }
-    .archives, .resources {
-    position : absolute;
-    left : -9999px;
-    }
-    .design-archives ul {
-    list-style : none;
-    margin : 1em 0 0;
-    width : 100%;
-    text-align : center;
-    }
-    .design-archives li {
-    display : inline-block;
-    position : relative;
-    }
-    .design-archives a {
-    display : block;
-    text-indent : 100%;
-    white-space : nowrap;
-    overflow : hidden;
-    }
-    .next {
-    margin-right : 3em;
-    }
-    .next a {
-    background : url(s/czg.svg) 10px -56px no-repeat transparent;
-    width : 43px;
-    height : 37px;
-    }
-    .next a:hover, .next a:focus {
-    background-position : 10px -138px;
-    }
-    .previous {
-    margin-right : 3em;
-    }
-    .previous a {
-    background : url(s/czg.svg) 10px -220px no-repeat transparent;
-    width : 43px;
-    height : 37px;
-    }
-    .previous a:hover, .previous a:focus {
-    background-position : 10px -302px;
-    }
-    .viewall {
-    margin-left : 1em;
-    }
-    .viewall a {
-    background : url(s/czg.svg) -56px -55px no-repeat transparent;
-    width : 39px;
-    height : 39px;
-    }
-    .viewall a:hover, .viewall a:focus {
-    background-position : -56px -137px;
-    }
-    footer {
-    font-size : 1.3rem;
-    }
-    footer a {
-    margin-left : 1em;
-    }
-    footer a:first-child {
-    margin-left : 0;
-    }
-    .zen-resources ul {
-    list-style : none;
-    margin : 2em 0 4em;
-    text-align : center;
-    }
-    .zen-resources ul:before {
-    content : "";
-    height : 4px;
-    width : 80px;
-    background : #d5d9dc;
-    display : block;
-    text-align : center;
-    margin : 0 auto 2em;
-    }
-    .zen-resources li {
-    margin : 0 0 1em 3em;
-    display : inline-block;
-    }
-    .zen-resources li:first-child {
-    margin-left : 0;
-    }
-    .zen-resources a {
-    display : inline-block;
-    text-indent : 100%;
-    white-space : nowrap;
-    overflow : hidden;
-    background : url(s/czg.svg) 0 0 no-repeat transparent;
-    width : 60px;
-    height : 60px;
-    }
-    
-    .view-css a:hover, .view-css a:focus {
-    background-position : -502px -78px;
-    }
-    
-    .zen-faq a {
-    background-position : -265px -192px;
-    }
-    .zen-faq a:hover, .zen-faq a:focus {
-    background-position : -265px -284px;
-    }
-    
-    .zen-translations a:hover, .zen-translations a:focus {
-    background-position : -380px -285px;
-    }
-    @media screen and (min-width:700px) {
-    body {
-    background-attachment : fixed;
-    background-position : 90% 80%;
-    }
-   
+	<aside class="sidebar" role="complementary">
+		<div class="wrapper">
 
-    .intro:before {
-    content : "";
-    display : block;
-    width : 105px;
-    height : 30px;
-    position : fixed;
-    top : 154px;
-    left : 3%;
-    background : url(s/czg.svg) -184px -99px no-repeat transparent;
-    }
-    [role="article"], [role="banner"], footer {
-    padding : 0 30% 10em 10%;
-    text-align : right;
-    position : relative;
-    }
-    [role="article"] h3, [role="banner"] h2 {
-    position : absolute;
-    top : -0.75em;
-    left : 75%;
-    width : 10em;
-    text-align : left;
-    font-size : 1.5rem;
-    letter-spacing : 0;
-    }
-    [role="article"] h3:after {
-    position : absolute;
-    top : 0;
-    }
-    [role="banner"] {
-    padding-top : 200px;
-    padding-bottom : 3em;
-    }
-    [role="banner"] h1 {
-    font-size : 4.8rem;
-    letter-spacing : 0;
-    line-height : 0.8;
-    }
-    [role="banner"] h1:after {
-    position : absolute;
-    top : 15.7em;
-    right : 30%;
-    }
-    [role="banner"] h2 {
-    display : block;
-    top : 8.1em;
-    width : 3em;
-    left : 75.5%;
-    font-size : 1.9rem;
-    line-height : 1;
-    }
-    [role="banner"] h2:before {
-    visibility : visible;
-    content : "Love";
-    display : block;
-    position : relative;
-    top : 1em;
-    bottom : 0;
-    left : -0.5em;
-    right : 0;
-    margin : auto;
-    font-weight : 900;
-    font-size : 20rem;
-    color : rgba(233, 104, 104, 0.15);
-    width : 100%;
-    height : 2em;
-    line-height : 1;
-    transform : rotate(-90deg);
-    }
-    .summary p:nth-child(2) {
-    background : yellow;
-    position : relative;
-    visibility : hidden;
-    top : 2em;
-    font-size : 1.4rem;
-    }
-    .summary p:nth-child(2):before {
-    content : "";
-    display : block;
-    visibility : visible;
-    position : absolute;
-    right : 21em;
-    top : -0.25em;
-    background : url(s/czg.svg) -159px -1px no-repeat transparent;
-    width : 6em;
-    height : 30px;
-    }
-    .summary p:nth-child(2):after {
-    content : "";
-    display : block;
-    visibility : visible;
-    position : absolute;
-    right : 14em;
-    top : -0.25em;
-    background : url(s/czg.svg) -277px 0 no-repeat transparent;
-    width : 6em;
-    height : 30px;
-    }
-    .summary p:nth-child(2) a {
-    visibility : visible;
-    background : url(s/czg.svg) -376px -93px no-repeat transparent;
-    width : 6em;
-    height : 25px;
-    text-indent : 100%;
-    white-space : nowrap;
-    overflow : hidden;
-    display : block;
-    position : absolute;
-    top : 0;
-    right : 7em;
-    }
-    .summary p:nth-child(2) a:hover, .summary p:nth-child(2) a:focus {
-    background-position : -396px -3px;
-    text-indent : 0;
-    background : none;
-    }
-    .summary p:nth-child(2) a[href*="css"] {
-    background-position : -472px -94px;
-    right : 0;
-    }
-    .summary p:nth-child(2) a[href*="css"]:hover, .summary p:nth-child(2) a[href*="css"]:focus {
-    background-position : -512px -4px;
-    }
-    .preamble {
-    padding-top : 10em;
-    }
-    .preamble h3 {
-    top : 5.9em;
-    }
-    .design-selection li {
-    width : 23%;
-    margin-bottom : 3em;
-    padding-right : 2%;
-    }
-    .design-selection li:nth-child(odd) {
-    width : 23%;
-    clear : none;
-    padding-right : 2%;
-    }   ``
-    .next {
-    margin-right : 2em;
-    margin-left : -0.4em;
-    }
-    .viewall {
-    margin-left : 0;
-    }
-    footer {
-    padding-bottom : 3em;
-    margin-top : -5em;
-    }
-    }
-    @media screen and (min-width:1130px) {
-    [role="article"], [role="banner"] {
-    padding-left : 25%;
-    }
-    .design-selection {
-    position : absolute;
-    left : 5%;
-    top : 30em;
-    }
-    .design-selection ul {
-    margin : 0;
-    width : 100%;
-    }
-    .design-selection li {
-    float : none;
-    width : 100% !important ;
-    padding : 0 !important ;
-    margin-bottom : 2em;
-    }
-    .select:after {
-    text-align : left;
-    background-position : 0 bottom;
-    padding : 0 0 2em;
-    margin : 0 0 2em;
-    }
-    .design-archives {
-    position : absolute;
-    left : 5%;
-    top : 95em;
-    }
-    }
-    @media screen and (min-width:1130px) and (min-height:1037px) {
-    .design-selection, .design-archives {
-    position : fixed;
-    }
-    }
-    @media screen {
-    .main h3, .preamble h3, .select {
-    visibility : visible;
-    }
-    [role="banner"] h1 {
-    visibility : visible;
-    width : auto;
-    display : block;
-    }
-    .main h3:after, .preamble h3:after, .select:after {
-    display : none;
-    }
-    [role="banner"] h1:before {
-    display : none;
-    }
-    }
+			<div class="design-selection" id="design-related links">
+				<h3 class="select">Related links:</h3>
+				<nav role="navigation">
+						<ul>
+								<li class="next">
+								<li>
+									<a href="https://www.facebook.com/Raw-And-Simple-By-Mireille-180590145773737/" title="View my facebook page">
+										View My Facebook Page							</a>
+								</li>                                                        </ul>
+				</nav>
+			</div>
+
+		
+	</aside>
+
+</div>
+
+<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
+<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
+
+</body>
+</html>
